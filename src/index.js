@@ -10,9 +10,11 @@ const app = dva();
 // 3. Model
 app.model(require('./models/example'));
 
-app.model(require("./models/machines"));
+app.model(require('./models/machines'));
 
 app.model(require('./models/laundries'));
+
+app.model(require('./models/weixinpayment'));
 
 // 4. Router
 app.router(require('./router'));
